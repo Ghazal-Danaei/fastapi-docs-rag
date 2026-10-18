@@ -70,15 +70,6 @@ data/chroma/      # Vector store (git-ignored, built in step 4)
 eval/             # Evaluation set and results (M2)
 ```
 
-## Known limitations of the baseline
-
-These are the problems the next milestones address:
-
-- Fixed-size chunks cut through headings and code blocks.
-- Dense-only retrieval misses exact keyword matches such as function and parameter names.
-- No reranking; the top-5 results are used as-is.
-- No evaluation yet, so quality isn't measured.
-- CLI only; no API or UI.
 
 ## Roadmap
 
