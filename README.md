@@ -1,10 +1,9 @@
 # FastAPI Docs RAG
 
 A retrieval-augmented generation (RAG) assistant that answers questions about the
-[FastAPI documentation](https://fastapi.tiangolo.com/) with cited sources, built
-milestone by milestone, from a naive baseline up to a measured, production-style service.
+[FastAPI documentation](https://fastapi.tiangolo.com/) with cited sources.
 
-> **Status:** Milestone 1 (naive baseline) complete. See the [roadmap](#roadmap).
+
 
 ## How it works (M1: naive baseline)
 
@@ -71,16 +70,7 @@ eval/             # Evaluation set and results (M2)
 ```
 
 
-## Roadmap
 
-- [x] **M1: Naive baseline:** fixed chunking, dense retrieval, grounded generation with citations
-- [ ] **M2: Evaluation:** golden question set, Recall@k / MRR, LLM-as-judge faithfulness
-- [ ] **M3: Structure-aware chunking:** split on Markdown headings, token-based sizes
-- [ ] **M4: Hybrid retrieval and reranking:** BM25 + dense with reciprocal rank fusion (RRF), plus a cross-encoder reranker
-- [ ] **M5: FastAPI service:** `/query` and `/ingest` endpoints, streaming responses, structured citations
-- [ ] **M6: Streamlit UI:** chat interface with source display
-- [ ] **M7: Production polish:** tests, Docker, GitHub Actions CI, cost/latency tracking
-- [ ] **M8: Cloud deployment**
 
 ## Tech stack
 
